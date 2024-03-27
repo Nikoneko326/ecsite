@@ -214,7 +214,7 @@ fetch("/ecsite/api/history", {
       <button type="submit">ログイン</button>
     </form>
     
-    <span id="welcome">ようこそ！　ゲストさん</span>
+    <span id="welcome">ようこそ！ ゲストさん</span>
     <input type="hidden" id="hiddenUserId" value="0">
   </div>
 </header>
@@ -230,7 +230,7 @@ fetch("/ecsite/api/history", {
        <td th:text="${item.id}"/>
        <td th:text="${item.goodsName}"/>
        <td th:text="${item.price}"/>
-       <td><input type="number" class="count" value="0"/></td>
+       <td><input type="number" class="count" value="0" min="0"/></td>
        <td><button class="cartBtn">カートに入れる</button></td>
      </tr>
     </tbody>
